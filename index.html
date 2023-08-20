@@ -13,29 +13,199 @@
     type="text/css"
   />
   <script src="https://cdn.tailwindcss.com"></script>
-  <body>
-    <header class="bg-[#F9F6E2] ">
-      <div class="banner-content flex gap-5 flex-col md:flex-row w-[100%] mx-auto flex justify-center items-center py-10">
+  <body class="bg-[#f6f6f6]">
+    <header class="bg-[#F9F6E2]">
+      <div
+        class="banner-content flex gap-5 flex-col md:flex-row w-[80%] mx-auto flex justify-around items-center py-10"
+      >
         <div class="text-center">
           <h4 class="text-2xl text-[#111] font-semibold">---SALE FEVER---</h4>
-          <h1 class="text-4xl text-[#000] font-bold tracking-wider	my-7 max-w-[450px]">Purchase TK 200 or above & get <span class="text-[#E527B2]">20% off</span></h1>
-          <p class="text-sm font-semibold text-[#111]">Use Promo Code <button class="bg-[#E527B2] text-white px-5 py-2 rounded-md mx-4">SELL200</button> </p>
+          <h1
+            class="text-4xl text-[#000] font-bold tracking-wider my-7 max-w-[450px]"
+          >
+            Purchase TK 200 or above & get
+            <span class="text-[#E527B2]">20% off</span>
+          </h1>
+          <p class="text-sm font-semibold text-[#111]">
+            Use Promo Code
+            <button class="bg-[#E527B2] text-white px-5 py-2 rounded-md mx-4">
+              SELL200
+            </button>
+          </p>
         </div>
-        <div class=""><img src="./images/Summer 1.png" alt="" class="max-w-[400px]"></div>
+        <div class="">
+          <img src="./images/Summer 1.png" alt="" class="max-w-[400px]" />
+        </div>
       </div>
     </header>
 
+    <main class="flex mx-auto px-10 py-5 flex-col md:flex-row my-10 gap-10">
+      <div class="content-area flex-1">
+        <!-- First Category Products -->
+        <div>
+          <h3 class="text-4xl font-semibold text-[#111]">Kitchenware</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Product 1 Start-->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
 
-    <main class="flex bg-[#f6f6f6] w-[90%] mx-auto px-10 py-5 flex-col md:flex-row">
-      <div class="content-area flex-1 h-[500px] bg-slate-800">
-        <h1 class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ullam provident officia illum commodi non quibusdam omnis at, unde neque.</h1>
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p> <span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 1 End -->
+
+
+            <!-- Product 2 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p> <span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 2 End -->
+            <!-- Product 3 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p> <span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 3 End -->
+
+          
+          </div>
+        </div>
+
+        <!-- First Category Products End-->
       </div>
+
       <div class="sidebar w-[100%] md:w-[25%] h-[500px] bg-slate-500">
-        <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimu</h1>
+        <h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimu
+        </h1>
       </div>
     </main>
 
-
-
+    <script src="./js/function.js"></script>
   </body>
 </html>
