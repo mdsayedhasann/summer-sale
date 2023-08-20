@@ -14,9 +14,9 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <body class="bg-[#f6f6f6]">
-    <header class="bg-[#F9F6E2]">
+    <header class="bg-[#F9F6E2] py-10">
       <div
-        class="banner-content flex gap-5 flex-col md:flex-row w-[80%] mx-auto flex justify-around items-center py-10"
+        class="banner-content flex gap-5 flex-col md:flex-row w-[1400px] mx-auto flex justify-around items-center py-10"
       >
         <div class="text-center">
           <h4 class="text-2xl text-[#111] font-semibold">---SALE FEVER---</h4>
@@ -39,14 +39,16 @@
       </div>
     </header>
 
-    <main class="flex mx-auto px-10 py-5 flex-col md:flex-row my-10 gap-10">
+    <main
+      class="flex mx-auto px-10 py-5 flex-col md:flex-row my-10 gap-10 w-[1400px]"
+    >
       <div class="content-area flex-1">
         <!-- First Category Products -->
         <div>
-          <h3 class="text-4xl font-semibold text-[#111]">Kitchenware</h3>
+          <h3 class="text-4xl font-bold text-[#111]">Kitchenware</h3>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
             <!-- Product 1 Start-->
-            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
                 <img
                   src="/images//prod1.png"
@@ -89,14 +91,13 @@
                 <h2 class="card-title text-[#111] font-semibold">
                   K. Accessories
                 </h2>
-                <p> <span>39.00</span>TK</p>
+                <p><span>39.00</span>TK</p>
               </div>
             </div>
             <!-- Product 1 End -->
 
-
             <!-- Product 2 Start -->
-            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
                 <img
                   src="/images//prod1.png"
@@ -139,12 +140,12 @@
                 <h2 class="card-title text-[#111] font-semibold">
                   K. Accessories
                 </h2>
-                <p> <span>39.00</span>TK</p>
+                <p><span>39.00</span>TK</p>
               </div>
             </div>
             <!-- Product 2 End -->
             <!-- Product 3 Start -->
-            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart()">
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
                 <img
                   src="/images//prod1.png"
@@ -187,22 +188,353 @@
                 <h2 class="card-title text-[#111] font-semibold">
                   K. Accessories
                 </h2>
-                <p> <span>39.00</span>TK</p>
+                <p><span>39.00</span>TK</p>
               </div>
             </div>
             <!-- Product 3 End -->
-
-          
           </div>
         </div>
 
         <!-- First Category Products End-->
+
+        <!-- Second Category Products -->
+        <div>
+          <h3 class="text-4xl text-[#111] font-bold text-[#111]">Sportswear</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Product 1 Start-->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 1 End -->
+
+            <!-- Product 2 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 2 End -->
+            <!-- Product 3 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 3 End -->
+          </div>
+        </div>
+
+        <!-- Second Category Products End-->
+
+        <!-- Third Category Products Start-->
+        <!-- Third Category Products -->
+        <div>
+          <h3 class="text-4xl text-[#111] font-bold text-[#111]">Furniture</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <!-- Product 1 Start-->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 1 End -->
+
+            <!-- Product 2 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 2 End -->
+            <!-- Product 3 Start -->
+            <div class="card bg-base-100 shadow-md my-10" onclick="addToCart(this)">
+              <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
+                <img
+                  src="/images//prod1.png"
+                  alt="Shoes"
+                  class="rounded-xl bg-[#f8f8f8]"
+                />
+              </figure>
+              <div class="card-body items-center text-center">
+                <!-- Rating Start -->
+                <div class="rating">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                  />
+                </div>
+                <!-- Rating End -->
+
+                <h2 class="card-title text-[#111] font-semibold">
+                  K. Accessories
+                </h2>
+                <p><span>39.00</span>TK</p>
+              </div>
+            </div>
+            <!-- Product 3 End -->
+          </div>
+        </div>
+
+        <!-- Third Category Products End-->
+        <!-- Third Category Products End-->
       </div>
 
-      <div class="sidebar w-[100%] md:w-[25%] h-[500px] bg-slate-500">
-        <h1>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimu
-        </h1>
+      <div class="sidebar w-[100%] md:w-[25%] h-[500px] mt-20">
+        <div class="bg-white p-5 rounded-md shadow-sm">
+          <h3 class="text-2xl text-black font-semibold">Have coupon?</h3>
+          <!-- Coupon Code Start  -->
+          <div class="form-control mt-4">
+            <label class="input-group">
+              <input
+                type="text"
+                placeholder="Coupon code"
+                class="input input-bordered"
+              />
+              <button class="bg-[#E527B2] px-3 text-white">Email</button>
+            </label>
+          </div>
+          <!-- Coupon Code End  -->
+        </div>
+
+        <!-- Make Payment Start -->
+
+        <div class="bg-white p-5 rounded-md shadow-sm mt-5">
+          <div id="selected-product-list">
+
+          </div>
+
+          
+        </div>
+        <!-- Make Payment End  -->
       </div>
     </main>
 
