@@ -1,6 +1,9 @@
 let total = parseFloat(0);
 let calculateDiscount = parseFloat(0);
-let finalTotal = 0;
+let finalTotal = parseFloat(0);
+
+
+const getDiscount = document.getElementById('discount');
 const getPreviousTotal = document.getElementById('previous-total');
 
 function addToCart(target) {
@@ -12,10 +15,7 @@ function addToCart(target) {
     const h3 = document.createElement('h3');
     h3.classList.add('font-semibold', 'text-xl', 'py-2')
     h3.innerHTML = `${count + 1}. ${productName}`
-
     selectedProductList.appendChild(h3)
-
-
 
     
     const previousTotalString = getPreviousTotal.innerText;
@@ -26,7 +26,6 @@ function addToCart(target) {
     total = previousPtotal + productPrice;
     
 
-    // const inputCoupon = document.getElementById('input-coupon');
     const couponApply = document.getElementById('coupon-apply');
 
     if (total > 200) {
@@ -35,87 +34,48 @@ function addToCart(target) {
         console.log(couponApply.classList);
 
     }
-
-
-
-    printTotal()
-
-
-
-    // Final Total Count
-
-    const finalTotal = document.getElementById('final-total');
-    const finalTotalString = finalTotal.innerText;
-    // const finalTotalAmount = parseFloat(finalTotalString);
-    // finalTotal.innerText = total - calculateDiscount.toFixed(2);
-    // const calculateFinalTotal = total - calculateDiscount;
-    // const calculateFinalTotalAmount = parseFloat(calculateFinalTotal)
-    // console.log(calculateFinalTotalAmount);
+    printCalculation()
 }
 
-
-// Coupon & Discount 
 
 document.getElementById('coupon-apply').addEventListener('click', function () {
     const inputCoupon = document.getElementById('input-coupon');
     const inputCouponValue = inputCoupon.value;
-    // console.log();
 
-
-
-    if (inputCouponValue === 'SELL20') {
-        // Discount Calculation
-        const getDiscount = document.getElementById('discount');
+    if (inputCouponValue === 'SELL20') {        
         calculateDiscount = total * .2;
-        getDiscount.innerText = calculateDiscount.toFixed(2);
     }
-
-    printTotal()
-
-
+    printCalculation()
 })
 
 
-function printTotal() {
+function printCalculation() {
+    getDiscount.innerText = calculateDiscount.toFixed(2);
     getPreviousTotal.innerText = total.toFixed(2);
     finalTotal = total - calculateDiscount;
-    console.log(finalTotal);
+    finalTotal = finalTotal.toFixed(2);
+
 
     const final = document.getElementById('final-total');
-    // const finalString = final.innerText;
-    // const finalAmount = parseFloat(finalString)
+    
 
     final.innerText = finalTotal;
 
+    const makePaymentButton = document.getElementById('make-payment')
     if (finalTotal > 0) {
-        const makePaymentButton = document.getElementById('make-payment')
         makePaymentButton.removeAttribute('disabled');
         makePaymentButton.style.backgroundColor = '#E527B2'
+    }else{
+        makePaymentButton.setAttribute('disabled', true);
+        makePaymentButton.style.backgroundColor = '#ddd';
     }
 
 }
-
-// const closeButton = document.getElementById('goHome');
-// closeButton.addEventListener('click', goHome
-
-// )
-
-// function goHome() {
-//     total = 0;
-//     calculateDiscount = 0;
-//     printTotal();
-// }
 
 const closeButton = document.getElementById('goHome');
 closeButton.addEventListener('click', function(){
     total = 0;
     calculateDiscount = 0;
     finalTotal = 0
-    printTotal();
+    printCalculation();
 })
-
-// function goHome() {
-//     total = 0;
-//     calculateDiscount = 0;
-//     printTotal();
-// }
