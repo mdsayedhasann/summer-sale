@@ -547,11 +547,7 @@
                 class="input input-bordered"
                 id="input-coupon"
               />
-              <button
-                id="coupon-apply"
-                disabled
-                class="bg-[#E527B2] px-3 text-white"
-              >
+              <button disabled id="coupon-apply"  class="bg-slate-300 px-3 text-white" >
                 Apply
               </button>
             </label>
@@ -572,7 +568,7 @@
             Discount: <span id="discount" class="text-[#888888]">0.00</span>
             <span class="text-[#888888]">TK</span>
           </h3>
-          <h3 class="font-semibold text-xl text-black py-1">
+          <h3 class="font-semibold text-xl text-black py-1 border-b-2 pb-3">
             Total: <span id="final-total" class="text-[#888888]">0.00</span>
             <span class="text-[#888888]">TK</span>
           </h3>
@@ -581,14 +577,14 @@
         <!--  -->
         <!--  -->
         <!-- Make Payment Button Start  -->
-        <button class="bg-[#E527B2] px-3 text-white w-full px-5 py-2 rounded-md" onclick="my_modal_5.showModal()">Make Payment</button>
+        <button id="make-payment" class="bg-slate-200 px-3 text-white w-full px-5 py-2 rounded-md mt-8" disabled onclick="my_modal_5.showModal()">Make Payment</button>
         <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
           <form method="dialog" class="modal-box">
             <h3 class="font-bold text-lg">Hello!</h3>
             <p class="py-4">Press ESC key or click the button below to close</p>
             <div class="modal-action">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button id="goHome" class="btn">Close</button>
             </div>
           </form>
         </dialog>
