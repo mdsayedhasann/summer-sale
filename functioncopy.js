@@ -25,30 +25,14 @@ function addToCart(target) {
 
     // Coupon & Discount 
 
-    document.getElementById('coupon-apply').addEventListener('click',function(){
-        const inputCoupon = document.getElementById('input-coupon');
-        const inputCouponValue = inputCoupon.value;
-        // console.log();
-
-
-        if(total > 200){
-            inputCoupon.setAttribute('enabled');
-            inputCoupon.classList.add('bg-black')
-
-        }
-
-        // if (total > 200 && inputCouponValue === 'SELL20') {
-        //     // Discount Calculation
-            
-        //     const getDiscount = document.getElementById('discount');
-        //     const calculateDiscount = total * .2;
-        //     getDiscount.innerText = calculateDiscount.toFixed(2);
-        // }
-    })
-
-
-
-
+    const inputCoupon = document.getElementById('input-coupon');
+    const inputCouponValue = inputCoupon.value;
+    if (total > 200) {
+        // Discount Calculation
+        const getDiscount = document.getElementById('discount');
+        const calculateDiscount = total * .2;
+        getDiscount.innerText = calculateDiscount.toFixed(2);
+    }
 
 
     // Final Total Count
