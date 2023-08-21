@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Summer Sale</title>
   </head>
 
   <link
@@ -14,9 +14,9 @@
   />
   <script src="https://cdn.tailwindcss.com"></script>
   <body class="bg-[#f6f6f6]">
-    <header class="bg-[#F9F6E2] py-10">
+    <header class="bg-[#F9F6E2] py-10 ">
       <div
-        class="banner-content flex gap-5 flex-col md:flex-row w-[1400px] mx-auto flex justify-around items-center py-10"
+        class=" banner-content flex gap-5 flex-col md:flex-row w-[1400px] mx-auto flex justify-around items-center py-10"
       >
         <div class="text-center">
           <h4 class="text-2xl text-[#111] font-semibold">---SALE FEVER---</h4>
@@ -34,23 +34,20 @@
           </p>
         </div>
         <div class="">
-          <img src="../images/Summer 1.png" alt="" class="max-w-[400px]" />
+          <img src="./images/Summer 1.png" alt="" class="max-w-[400px]" />
         </div>
       </div>
     </header>
 
-    <main
-      class="flex mx-auto px-10 py-5 flex-col md:flex-row my-10 gap-10 w-[1400px]"
-    >
-      <div class="content-area flex-1">
+    <main class="flex mx-auto px-10 py-5 flex-col md:flex-row my-10 gap-10 w-[1400px]">
+      <div class="content-area ">
         <!-- First Category Products -->
         <div>
           <h3 class="text-4xl font-bold text-[#111]">Kitchenware</h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-5 ">
             <!-- Product 1 Start-->
             <div
-              class="card bg-base-100 shadow-md my-10"
-              onclick="addToCart(this)"
+              class=" card bg-base-100 shadow-md my-10" onclick="addToCart(this)"
             >
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
                 <img
@@ -101,7 +98,7 @@
 
             <!-- Product 2 Start -->
             <div
-              class="card bg-base-100 shadow-md my-10"
+              class=" card bg-base-100 shadow-md my-10"
               onclick="addToCart(this)"
             >
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
@@ -209,7 +206,7 @@
         <!-- Second Category Products Start-->
         <div>
           <h3 class="text-4xl text-[#111] font-bold text-[#111]">Sportswear</h3>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
             <!-- Product 1 Start-->
             <div
               class="card bg-base-100 shadow-md my-10"
@@ -484,7 +481,7 @@
             >
               <figure class="px-10 py-10 bg-[#f8f8f8] m-4">
                 <img
-                  src="./images//prod9.png"
+                  src="./images/prod9.png"
                   alt="Shoes"
                   class="rounded-xl bg-[#f8f8f8]"
                 />
@@ -535,7 +532,7 @@
         <!-- Third Category Products End-->
       </div>
 
-      <div class="sidebar w-[100%] md:w-[25%] h-[500px] mt-20">
+      <div class="sidebar w-full md:w-[25%] mt-20">
         <div class="bg-white p-5 rounded-md shadow-sm">
           <h3 class="text-2xl text-black font-semibold">Have coupon?</h3>
           <!-- Coupon Code Start  -->
@@ -547,7 +544,11 @@
                 class="input input-bordered"
                 id="input-coupon"
               />
-              <button disabled id="coupon-apply"  class="bg-slate-300 px-3 text-white" >
+              <button
+                disabled
+                id="coupon-apply"
+                class="bg-slate-300 px-3 text-white"
+              >
                 Apply
               </button>
             </label>
@@ -573,30 +574,40 @@
             <span class="text-[#888888]">TK</span>
           </h3>
 
-            <!--  -->
-        <!--  -->
-        <!--  -->
-        <!-- Make Payment Button Start  -->
-        <button id="make-payment" class="bg-slate-200 px-3 text-white w-full px-5 py-2 rounded-md mt-8" disabled onclick="my_modal_5.showModal()">Make Payment</button>
-        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-          <form method="dialog" class="modal-box">
-            <h3 class="font-bold text-lg">Hello!</h3>
-            <p class="py-4">Press ESC key or click the button below to close</p>
-            <div class="modal-action">
-              <!-- if there is a button in form, it will close the modal -->
-              <button id="goHome" class="btn">Close</button>
-            </div>
-          </form>
-        </dialog>
-        <!-- Make Payment Button End -->
-        <!--  -->
-        <!--  -->
-        <!--  -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
+          <!-- Make Payment Button Start  -->
+          <button
+            id="make-payment"
+            class="bg-slate-200 px-3 text-white w-full px-5 py-2 rounded-md mt-8"
+            disabled
+            onclick="my_modal_5.showModal()"
+          >
+            Make Payment
+          </button>
+          <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <form method="dialog" class="modal-box">
+              <div class="flex justify-center items-center">
+                <img src="./images/congo.png" alt="" >
+              </div>
+              <h3 class="font-bold text-3xl text-center ">Congratulations!</h3>
+              <p class="py-4 text-center">
+                Your Purchase the product
+              </p>
+              <div class="modal-action flex justify-center">
+                <!-- if there is a button in form, it will close the modal -->
+                <button id="goHome" class="btn bg-[#E527B2] text-white">Go Home</button>
+              </div>
+            </form>
+          </dialog>
+          <!-- Make Payment Button End -->
+          <!--  -->
+          <!--  -->
+          <!--  -->
         </div>
 
-      
         <!-- Open the modal using ID.showModal() method -->
-        
 
         <!-- Make Payment End  -->
       </div>

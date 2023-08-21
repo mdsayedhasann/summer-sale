@@ -4,6 +4,10 @@ document.getElementById('coupon-apply').addEventListener('click', function () {
 
     if (inputCouponValue === 'SELL20') {        
         calculateDiscount = total * .2;
+    }else{
+        alert('This Coupon is Not Valid')
     }
+    inputCoupon.value = ''
     printCalculation()
+    
 })
